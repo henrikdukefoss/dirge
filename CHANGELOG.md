@@ -7,6 +7,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [Unreleased]
 
 ### Added
+- Interactive sessions now report `idle`, `working`, `blocked`, and `done`
+  lifecycle states through OSC 7501 with `app=dirge`, so compatible terminal
+  managers such as Herdr can track agent activity and approval prompts.
 - Standard Compute as a built-in provider. Set `STANDARDCOMPUTE_API_KEY` and
   select it with `--provider standardcompute` (or a `providers.standardcompute`
   entry); defaults to the routed `StandardCompute` model against
